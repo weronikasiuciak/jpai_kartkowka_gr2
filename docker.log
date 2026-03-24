@@ -1,0 +1,202 @@
+    1  cd docker-lab
+    2  ls
+    3  nano app.js
+    4  nano Dockerfile
+    5  docker build -t lab-app .
+    6  docker run -d -p 80:3000 --name moja-apka lab-app
+    7  docker ps
+    8  nano app.js
+    9  nano Dockerfile
+   10  docker build -t moje-api:v2 .
+   11  docker ps
+   12  docker run -d -p 80:5000 -- name kontener2 moje-api:v2
+   13  docker run -d -p 80:5000 --name kontener2 moje-api:v2
+   14  docker run -d -p 500:5000 --name kontener2 moje-api:v2
+   15  docker run -d -p 500:5000 --name kontener3 moje-api:v2
+   16  docker run -d -p 80:3000 --name test1 moje-api:v2
+   17  docker stop moja-apka
+   18  docker run -d -p 80:3000 --name test1 moje-api:v2
+   19  docker run -d -p 80:3000 --name test2 moje-api:v2
+   20  docker ps
+   21  docker compase down
+   22  docker stop $(docker ps -q)
+   23  docker rm $(docker ps -a -q)
+   24  docker ps
+   25  docker ls 
+   26  docker image
+   27  docker images
+   28  docker rmi -f $(docker images -q)
+   29  docker images
+   30  docker ps
+   31  ls
+   32  docker run -d -p 80:3000 -v "${PWD}:/app" -v /app/node_modules --name
+   33  apka-dev lab-app npm run dev
+   34  docker build -t lab-app .
+   35  docker run -d -p 80:3000 --name moja-apka lab-app
+   36  docker ps
+   37  docker rm -f moja-apka
+   38  docker run -d -p 80:3000 -v "${PWD}:/app" -v /app/node_modules --name
+   39  apka-dev lab-app npm run dev
+   40  nano app.js
+   41  nano Dockerfile
+   42  docker run -d -p 80:3000 --name moja-apka lab-app
+   43  docker build -t lab-app .
+   44  docker run -d -p 80:3000 --name moja-apka lab-app
+   45  docker rm -f moja-apka
+   46  docker build -t lab-app .
+   47  docker run -d -p 80:3000 --name moja-apka lab-app
+   48  docker rm -f moja-apka
+   49  docker run -d -p 80:3000 -v "${PWD}:/app" -v /app/node_modules --name
+   50  apka-dev lab-app npm run dev
+   51  docker run -d -p 80:3000 -v "${PWD}:/app" -v /app/node_modules --name
+   52  apka-dev lab-app npm run dev
+   53  dent@student-45:~/docker-lab$ docker run -d -p 80:3000 -v "${PWD}:/app" -v /app/node_modules --name apka-dev lab-app npm run dev
+   54  docker run -d -p 80:3000 -v "${PWD}:/app" -v /app/node_modules --name apka-dev lab-app npm run dev
+   55  nano app.js
+   56  touch notatka.txt
+   57  nano notatka.txt
+   58  ls -la
+   59  docker exec -it apka-dev sh
+   60  cat notatka.yxy
+   61  cat notatka.txt
+   62  nano notatka.txt
+   63  cat notatka.txt
+   64  docker exec -it apka-dev sh
+   65  docker rm -f apka-dev
+   66  nano docker-compose.yml
+   67  docker -compose up -d
+   68  docker compose up -d
+   69  docker compose ps.
+   70  docker -compose ps
+   71  docker compose ps
+   72  nano docker-compose.yml
+   73  docker compose up -d
+   74  nano docker-compose.yml
+   75  git clone https://github.com/weronikasiuciak/test_docker_jpai.git
+   76  ls
+   77  nano docker-lab
+   78  cd test_docker_jpai
+   79  ls
+   80  nano zbuduj_mnie
+   81  nano pacage.json
+   82  nano app.js
+   83  nano README.md
+   84  docker build -t kolokwium:latest .
+   85  docker images
+   86  nano Dockerfile
+   87  docker build -t kolokwium:latest .
+   88  nano Dockerfile
+   89  docker build -t kolokwium:latest .
+   90  docker omages
+   91  docker images
+   92  docker ps
+   93  docker run -d -p --name kontener kolowium
+   94  docker run -d -p 3000:3000 --name kontener kolowium
+   95  docker run -d -p 80:3000 --name kontener kolowium
+   96  docker run -d -p 80:3000 --name kontener kolowium:latest
+   97  docker build -t kolowium .
+   98  docker run -d -p 80:3000 --name kontener kolowium
+   99  docker run -d -p 3000:3000 --name kontener kolowium
+  100  docker run -d -p 3000:3000 --name kontener1 kolowium
+  101  curl -f http://localhost:3000/
+  102  docker stop kontener1
+  103  docker ps
+  104  docker image rm kolokium
+  105  docker image rm kolokium:latest
+  106  docker rm kolokwium
+  107  docker images
+  108  docker rm kolowium
+  109  docker image rm kolowium
+  110  docker image rm kolokium
+  111  docker rmi kolkwium
+  112  docker ps -a
+  113  docker stop $(docker ps -q)
+  114  docker rm $(docker ps -a -q)
+  115  docker rmi -f $(docker images -q)
+  116  docker images
+  117  docker ps
+  118  history | grep docker | tee docker.log
+  119  ls
+  120  git add docker.log
+  121  git commit -m "komendy"
+  122  git config --global user.email "weronika_siuciak@wp.pl"
+  123  git config --global user.name "Weronika"
+  124  git add docker.log
+  125  git commit -m "komendy"
+  126  branch
+  127  git branch
+  128  git push origin main
+  129  git clone https://github.com/weronikasiuciak/test_docker_jpai.git
+  130  cd test_docker_jpai
+  131  ls
+  132  git pull
+  133  ls
+  134  git clone https://github.com/weronikasiuciak/test_docker_jpai.git
+  135  cd test_docker_jpai
+  136  las
+  137  ls
+  138  cat docker.log
+  139  ls
+  140  nano Dockerfile
+  141  nano zbuduj_mnie
+  142  nano Dockerfile
+  143  git pull -u origin main
+  144  ls
+  145  docker ps
+  146  docker images
+  147  'git rm Dockerfile
+  148  exit
+  149  rm Dockerfile
+  150  git clone https://github.com/weronikasiuciak/test_docker_jpai.git
+  151  cd test_docker_jpai
+  152  ls
+  153  rm -rf ~/test_docker_jpai
+  154  ls
+  155  git clone https://github.com/weronikasiuciak/test_docker_jpai.git
+  156  cd test_docker_jpai
+  157  ls
+  158  git clone https://github.com/weronikasiuciak/test_docker_jpai.git
+  159  cd test_docker_jpai
+  160  ls
+  161  nano Dockerfile
+  162  docker build -t kolokwium
+  163  docker build -t kolokium .
+  164  docker run -d -p 3000:3000 --name kontener kolokwium
+  165  ls
+  166  docker run -d -p 3000:3000 --name kontener kolokwium:latest
+  167  docker images
+  168  docker rmi -f kolokium
+  169  docker images
+  170  docker build -t kolokwium .
+  171  docker images
+  172  docker run -d -p 3000:3000 --name kontener kolokwium
+  173  curl -f http://localhost:3000/
+  174  docker stop kontener
+  175  docker rm -f kontener
+  176  docker ps
+  177  docker rmi -f kolokwium
+  178  docker images
+  179  history | grep docker | tee docker.log
+  180  git add .
+  181  git commit -m "kolokwium docker"
+  182  gitt pull 
+  183  git pull origin maingit pull origin main
+  184  git pull -u origin main
+  185  git push origin main
+  186  rm -rf ~/test_docker_jpai
+  187  cd test_docker_jpai
+  188  git clone https://github.com/weronikasiuciak/jpai_kartkowka_gr2.git
+  189  cd jpai_kartkowka_gr2
+  190  nano.js
+  191  nano app.js
+  192  docker build -t zaliczenie:v3 .
+  193  nano Dockerfile
+  194  docker build -t zaliczenie:v3 .
+  195  docker images
+  196  docker run -d -p 4012:3000 --name kontener zaliczenie:v3
+  197  curl -f http://localhost:4012/
+  198  docker rm -f kontener
+  199  docker ps
+  200  docker rmi -f zaliczenie:v3
+  201  docker images
+  202  history | tee docker.log
